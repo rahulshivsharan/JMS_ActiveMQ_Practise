@@ -44,7 +44,6 @@ public class ProducerThread extends Thread {
             }
             msg = session.createTextMessage("done");
             producer.send(msg);
-            producer.close();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
